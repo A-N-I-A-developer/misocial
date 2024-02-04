@@ -1,0 +1,58 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        title Misocial - мій перший сайт на препроцесорах з міксинами
+    body 
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+        include components/header.pug
+
+        main 
+            .main-plan 
+                .misocial-plan
+                    .misocial-paragraphe
+                        p MIsocial
+                    h1 Select a Plan
+                .misocial-plan-main
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+            .main-propositions 
+                .main-description1
+                    .card-image
+                        img(src="img/misocial.image1.png", alt="картинка1")
+                    h3 personal
+                    p $0/month
+                    .card-text
+                        p Lorem ipsum dolor sit amet.sed do eiusmod tempor incididunt ut.Labore et dolore magna aliqua.quis nostrud exercitation ullamco laboris.
+                    a(href="#") select plan
+                .main-description2
+                    .card-image
+                        img(src="img/misocial.image2.png", alt="картинка1")
+                    h3 personal
+                    p $29/month
+                    .card-text
+                        p Lorem ipsum dolor sit amet.sed do eiusmod tempor incididunt ut.Labore et dolore magna aliqua.quis nostrud exercitation ullamco laboris.
+                    a(href="#") select plan
+                .main-description3
+                    .card-image
+                        img(src="img/misocial.image3.png", alt="картинка1")
+                    h3 personal
+                    p $49/month
+                    .card-text
+                        p Lorem ipsum dolor sit amet.sed do eiusmod tempor incididunt ut.Labore et dolore magna aliqua.quis nostrud exercitation ullamco laboris.
+                    a(href="#") select plan
+            .main-date 
+                .date-selection 
+                    p SOCAL MARKETING & ANALYTICS
+                    h2 Take control of your data
+                    .link-main
+                        .link-marketing
+                            a(href="#") get started
+                        .link-marketing
+                            a(href="#") explore features
+
+        include components/footer.pug

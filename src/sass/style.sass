@@ -1,0 +1,185 @@
+@import helpers/vars
+@import helpers/mixins
+  
+@import  components/header
+@import  components/footer
+
+.main-date
+    height: 525px
+    background: linear-gradient(-60deg, rgba(135, 211, 205, 0.8) 0%, rgba(109, 69, 225, 0.8) 100%), url(../img/map.png)
+    background-size: cover
+    padding: 180px 0 185px
+
+.date-selection 
+    p
+        font-size: 14px
+        letter-spacing: 1px
+        line-height: 32px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 700
+        font-family: "Maven Pro"
+        text-align: center
+        margin-bottom: 25px
+    h2
+        font-size: 60px
+        letter-spacing: -2px
+        line-height: 72px
+        color: #ffffff
+        font-weight: 500
+        font-family: "Maven Pro"
+        text-align: center
+        margin-bottom: 20px
+    a
+        display: inline-block
+        font-size: 12px
+        letter-spacing: 1px
+        line-height: 32px
+        text-transform: uppercase
+        color: #c2c9db
+        font-weight: 700
+        font-family: "Maven Pro"
+        text-align: center
+        text-decoration: none
+        padding: 20px 350px
+        border-radius: 25px
+        filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+        background-color: #fff
+        border: 1px solid #d7dbe8
+        transition: 0.5s
+        transition-timing-function: linear
+    &:last-child a
+        padding: 20px 30px
+    &:hover a
+        color: #fff
+        background-color: #6e45e2
+
+.link-main 
+    display: flex
+    justify-content: space-between
+
+.main-plan
+    padding: 120px 0 100px
+    margin: auto
+
+// .misocial-paragraphe
+
+.misocial-plan 
+    p
+        max-width: 150px
+        display: inline
+        position: relative
+        font-size: 14px
+        letter-spacing: 1px
+        line-height: 32px
+        text-transform: uppercase
+        color: #9fa4af
+        font-weight: 700
+        font-family: "Maven Pro"
+        text-align: center
+        padding: 0 40px
+        &::before 
+            content: ""
+            position: absolute
+            height: 1px
+            width: 25px
+            left: 0
+            top: 50%
+            background-color: #6e45e2
+        &::after
+            content: ""
+            position: absolute
+            height: 1px
+            width: 25px
+            right: 0
+            top: 50%
+            background-color: #6e45e2
+    h1
+        margin: 25px 0 40px
+        font-size: 60px
+        letter-spacing: -2px
+        line-height: 72px
+        color: #4f4f6f
+        font-weight: 500
+        font-family: "Maven Pro"
+        text-align: center
+
+.misocial-paragraphe
+    display: flex
+    justify-content: center
+
+
+.misocial-plan-main
+    p
+        font-size: 16px
+        line-height: 28px
+        color: #9fa4af
+        font-weight: 400
+        font-family: "Maven Pro"
+        text-align: center
+
+.main-propositions
+    display: flex
+    justify-content: space-between
+    margin-bottom: 120px
+    .main-description1,
+    .main-description2,
+    .main-description3
+        border-radius: 30px
+        background-color: #fff
+        border: 1px solid #d7dbe8
+        width: 440px
+        text-align: center
+        h3
+            text-align: center
+            font-size: 14px
+            letter-spacing: 1px
+            line-height: 32px
+            text-transform: uppercase
+            color: #9fa4af
+            font-weight: 700
+            font-family: "Maven Pro"
+        p 
+            margin: 30px 0 50px
+            font-size: 60px
+            letter-spacing: -2px
+            line-height: 72px
+            color: #4f4f6f
+            font-weight: 500
+            font-family: "Maven Pro"
+            text-align: center
+            &:last-child
+                font-size: 16px
+                line-height: 28px
+                color: #9fa4af
+                font-weight: 400
+                font-family: "Maven Pro"
+                text-align: center
+        a
+            display: inline-block
+            margin: 55px 0 65px
+            font-size: 12px
+            letter-spacing: 1px
+            line-height: 32px
+            text-transform: uppercase
+            color: #c2c9db
+            font-weight: 700
+            font-family: "Maven Pro"
+            text-align: center
+            padding: 20px 50px
+            text-decoration: none
+            border-radius: 25px
+            filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+            background-color: #ffffff
+            border: 1px solid #d7dbe8
+            &:hover
+                color: #fff
+                background-color: #6e45e2
+        &:hover
+            filter: drop-shadow(0 0 46px rgba(204,204,223,0.71))
+
+.card-image 
+    text-align: center       
+    img
+        margin: 65px 0 60px
+        text-align: center

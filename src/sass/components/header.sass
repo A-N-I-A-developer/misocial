@@ -1,0 +1,133 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body 
+    font-family: "Maven Pro"
+
+header
+    padding: 65px 0
+    background: linear-gradient(-60deg, rgba(135, 211, 205, 0.8) 0%, rgba(109, 69, 225, 0.8) 100%), url(../img/header-bg.jpg)
+
+.wrapper
+    padding: 0 50px
+
+.main-menu
+    display: flex
+    justify-content: space-between
+
+.logo 
+    a
+        font-size: 30px
+        letter-spacing: 6px
+        line-height: 29px
+        color: #fff
+        font-weight: 700
+        text-decoration: none
+        display: flex
+        align-items: center
+        column-gap: 20px
+
+.main-pages
+    display: flex
+    justify-content: space-between
+    ul
+        display: flex
+        justify-content: space-between
+        align-items: center
+    li 
+        list-style: none
+        a
+            position: relative
+            display: inline-block
+            padding: 0 30px
+            font-size: 16px
+            line-height: 19px
+            color: #fff
+            font-weight: 500
+            text-decoration: none
+        &:not(:last-child) a
+            &:before 
+                content: ""
+                position: absolute
+                height: 2px
+                left: 0
+                bottom: -20px
+                background-color: #fff
+            &:hover::before
+                width: 100%
+                transition: 5s
+                transition-timing-function: linear
+        &:last-child a
+            font-size: 12px
+            letter-spacing: 1px
+            text-transform: uppercase
+            font-weight: 700
+            text-align: center
+            border-radius: 25px
+            border: 1px solid #fff
+            padding: 20px 35px
+        &:last-child a:hover
+            background-color: #fff
+            color: #6e8acd
+            transition: 0.5s
+            transition-timing-function: linear
+
+.pricing-description
+    display: flex
+    align-items: center 
+    flex-direction: column
+    padding-top: 180px
+    p
+        display: inline
+        position: relative
+        padding: 0 40px
+        margin-bottom: 15px
+        font-size: 14px
+        letter-spacing: 1px
+        line-height: 32px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 700
+        font-family: "Maven Pro"
+        &::before
+            content: ""
+            position: absolute
+            height: 1px
+            width: 25px
+            left: -10px
+            bottom: 50%
+            background-color: #fff
+        &::after
+            content: ""
+            position: absolute
+            height: 1px
+            width: 25px
+            right: -10px
+            bottom: 50%
+            background-color: #fff
+    h2
+        font-size: 86px
+        letter-spacing: -3px
+        line-height: 72px
+        color: #fff
+        font-weight: 500
+        text-align: center
+        margin: 40px 0 25px
+
+.pricing-description-header
+    display: flex
+    justify-content: center
+    p
+        max-width: 400px
+        height: 48px
+        font-size: 16px
+        line-height: 28px
+        color: #fff
+        font-weight: 400
+        font-family: "Maven Pro"
+        text-align: center
+
+        
+        
